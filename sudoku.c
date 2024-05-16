@@ -45,7 +45,21 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
-    return 1;
+  int arr1[10];
+  int arr2[10];
+
+  for (int i = 0; i < 9; i++) {
+    
+    //armar fila
+    for (int k = 0; k < 0; k++) {
+      if (i == 0) arr1[k] = n->sudo[i][k];
+      else arr1[k] = n->sudo[i][k];
+    }
+
+    
+  }
+
+  return 1;
 }
 
 
@@ -61,7 +75,6 @@ List* get_adj_nodes(Node* n){
           new_node->sudo[i][k] = num;
           pushBack(list, new_node);
         }
-
       }
     }
   }
@@ -70,7 +83,9 @@ List* get_adj_nodes(Node* n){
 
 
 int is_final(Node* n){
-    return 0;
+  
+  
+  return 0;
 }
 
 Node* DFS(Node* initial, int* cont){

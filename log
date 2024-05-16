@@ -13,3 +13,14 @@ sudoku.c:61:17: error: unused variable ‘nuevo_estado’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 6014a38
+Thu 16 May 2024 09:51:21 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:61:17: error: unused variable ‘nuevo_estado’ [-Werror=unused-variable]
+   61 |           Node *nuevo_estado = copy(n);
+      |                 ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+24e29f5

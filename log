@@ -2,3 +2,14 @@ Thu 16 May 2024 09:37:14 PM UTC:
  tests:  0|5
 total_score: 0/70
 dcb5b5f
+Thu 16 May 2024 09:49:53 PM UTC: 
+ sudoku.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:61:17: error: unused variable ‘nuevo_estado’ [-Werror=unused-variable]
+   61 |           Node *nuevo_estado = copy(n);
+      |                 ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6014a38

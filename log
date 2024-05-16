@@ -24,3 +24,9 @@ sudoku.c:61:17: error: unused variable ‘nuevo_estado’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 24e29f5
+Thu 16 May 2024 09:53:34 PM UTC: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  0|5
+total_score: 0/70
+4e50cab

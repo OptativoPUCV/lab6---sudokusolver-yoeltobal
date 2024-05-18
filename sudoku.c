@@ -126,9 +126,45 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
+  
+  Stack* S = createStack();
+  push(S, initial);
+
+  while (S != NULL) {
+    Node* n = top(S);
+    pop(S);
+
+    if (is_final(n)) return n;
+
+    List* adj = get_adj_nodes(n);
+
+    while (adj != NULL) {
+      Node* aux = first(adj);
+      push(S, aux);
+    }
+    cont++;
+
+    free(n);
+    
+  }
+
+  
+  
+  
   return NULL;
 }
+/*
+d) Agregue los nodos de la lista (uno por uno) al stack S.
 
+e) Libere la memoria usada por el nodo.
+
+Si terminó de recorre el grafo sin encontrar una solución, retorne NULL.
+
+Almacene en la variable cont, la cantidad de iteraciones que realiza el algoritmo.
+
+Puede ver un código de ejemplo en las diapos.
+Recuerde revisar las operaciones del TDA Stack en el archivo list.h.
+*/
 
 
 /*

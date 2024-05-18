@@ -76,12 +76,12 @@ int is_valid(Node* n){
 
   for (int i = 0; i < 9; i++) {
 
-    for (int k = 0; k < 10; i++) arr[k] = 0;
+    for (int k = 0; k < 10; k++) arr[k] = 0;
 
     for (int p = 0; p < 9; p++) {
       
-      int fil = 3 * (k / 3) + (p / 3);
-      int col = 3 * (k % 3) + (p % 3);
+      int fil = 3 * (i / 3) + (p / 3);
+      int col = 3 * (i % 3) + (p % 3);
       if (n->sudo[fil][col] != 0) {
         if (arr[n->sudo[fil][col]] == 1) return 0;
         arr[n->sudo[fil][col]] = 1;

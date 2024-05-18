@@ -190,3 +190,8 @@ sudoku.c:136:10: error: unused variable ‘temp’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 baba552
+Sat 18 May 2024 02:05:16 PM UTC: 
+ sudoku.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|0
+b70ebd3

@@ -89,3 +89,14 @@ Sat 18 May 2024 01:24:58 PM UTC:
  tests:  2|4
 total_score: 15/70
 4d2ddbe
+Sat 18 May 2024 01:25:28 PM UTC: 
+ sudoku.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:83:22: error: ‘k’ undeclared (first use in this function)
+   83 |       int fil = 3 * (k / 3) + (p / 3);
+      |                      ^
+sudoku.c:83:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+762e5d3

@@ -45,15 +45,18 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
-  int arr1[10];
-  int arr2[10];
+  int arr[10];
 
   for (int i = 0; i < 9; i++) {
+
+    for (int k = 0; k < 0; k++) arr[k] = 0;
     
-    //armar fila
     for (int k = 0; k < 0; k++) {
-      if (i == 0) arr1[k] = n->sudo[i][k];
-      else arr1[k] = n->sudo[i][k];
+      
+      if (n->sudo[i][k] != 0) {
+        if (arr[n->sudo[i][k]] == 1) return 0;
+        arr[n->sudo[i][k]] = 1;
+      }
     }
 
     

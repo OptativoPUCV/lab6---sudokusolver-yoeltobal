@@ -56,3 +56,9 @@ sudoku.c:48:7: error: variable ‘arr1’ set but not used [-Werror=unused-but-s
 cc1: all warnings being treated as errors
 Compilation failed
 8d5f75b
+Sat 18 May 2024 01:12:45 PM UTC: 
+ sudoku.c | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+ tests:  2|4
+total_score: 15/70
+72b1594

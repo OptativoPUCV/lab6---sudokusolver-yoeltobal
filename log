@@ -179,3 +179,14 @@ Sat 18 May 2024 02:02:23 PM UTC:
  1 file changed, 8 insertions(+), 2 deletions(-)
  tests:  0|0
 f790afa
+Sat 18 May 2024 02:04:52 PM UTC: 
+ sudoku.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:136:10: error: unused variable ‘temp’ [-Werror=unused-variable]
+  136 |   Node * temp = top(S);
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+baba552

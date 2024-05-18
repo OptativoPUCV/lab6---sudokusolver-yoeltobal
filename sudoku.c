@@ -134,7 +134,7 @@ Node* DFS(Node* initial, int* cont){
 
   
   Node * temp = top(S);
-  while (temp != NULL) {
+  while (S != NULL) {
     
     Node* n = top(S);
     pop(S);
@@ -143,14 +143,15 @@ Node* DFS(Node* initial, int* cont){
 
     List* adj = get_adj_nodes(n);
 
-    while (adj != NULL) {
+    Node * temp = first(adj);
+    while (temp != NULL) {
       Node* aux = first(adj);
       push(S, aux);
+      temp = next(adj);
     }
 
     cont++;
     free(n);
-    temp = next(S);
   
   }
   

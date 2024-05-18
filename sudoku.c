@@ -74,11 +74,11 @@ int is_valid(Node* n){
     }
   }
 
-  for (int i = 0; i < 9; i++) {
+  /*for (int i = 0; i < 9; i++) {
 
     for (int k = 0; k < 10; i++) arr[k] = 0;
 
-    /*for (int p = 0; p < 9; p++) {
+    for (int p = 0; p < 9; p++) {
       
       int fil = 3 * (i / 3) + (p / 3);
       int col = 3 * (i % 3) + (p % 3);

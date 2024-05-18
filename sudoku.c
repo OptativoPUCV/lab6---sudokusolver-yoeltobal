@@ -133,7 +133,7 @@ Node* DFS(Node* initial, int* cont){
   if (S == NULL) return NULL;
 
   
-  while (S != NULL) {
+  while (is_empty(S) != 1) {
     
     Node* n = top(S);
     pop(S);
